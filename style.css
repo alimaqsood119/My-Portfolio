@@ -45,14 +45,14 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: #fff;
+    color: #e0e0e0;
     text-decoration: none;
     transition: color 0.3s;
     align-items: left;
 }
 
 header nav ul li a:hover {
-    color: #ffa500;  
+    color: #e66161;  
 }
 
 main {
@@ -81,7 +81,8 @@ section#about, section#contact {
 h2 {
     margin-bottom: 1rem;
     text-align: center;
-    color: #ffa500;  /* Highlight color */
+    color: #f1a923;  /* Highlight color */
+    
 }
 
 img {
@@ -101,30 +102,80 @@ img {
 ul {
     list-style: none;
     padding: 0;
-    margin: 0;
+    
     text-align: center;
 }
 
 ul li {
     display: inline-block;
     margin: 0.5rem 1rem;
-    color: #fffdf9;  /* Highlight color for skills */
+    color: #f1f1ef;  /* Highlight color for skills */
+
+    
 }
+ ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+    align-items: left;
+
+}
+ul li:hover{
+    background-color: #da4a31;
+}
+
+       
 
 footer {
     background: #001f3f;  /* Dark blue background */
     color: #fff;
     text-align: center;
-    padding: 1rem 0;
-    margin-top: 2rem;
+    padding: 0.6rem ;
+    margin-top: rem;
 }
 
 a {
-    color: #ecb348;  /* Highlight color */
+    color: #dbd9d6;  /* Highlight skill color */
     text-decoration: none;
     transition: color 0.3s;
 }
 
 a:hover {
-    color: #ff6347;  /* Hover color */
+    background-color: #e0dfd6;  /* Hover color */
+}
+form {
+    background: #000000;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #f8f8f8;
+    
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 9px;
+    margin-bottom: 11px;
+    border: 5px solid #000000;
+    border-radius: 3px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #97a325;
+    color: #000000;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #b5cf22;
 }
