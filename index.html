@@ -5,8 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ali Maqsood's Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script> <!-- Adding Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script> <!-- Adding GSAP -->
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> <!-- Lottie player -->
+    <!-- Cloudflare Web Analytics -->
+    <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"rayId":"YOUR_RAY_ID"}'></script>
 </head>
 <body>
+  
     <header>
         <div class="container">
             <h1>Ali Maqsood</h1>
@@ -15,41 +21,61 @@
                     <li><a href="#about">About</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#skills">Skills</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#blog">Blog</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <main>
+        <section class="banner" id="banner1">
+            <div class="banner-content">
+                <h2>Welcome to My Portfolio</h2>
+                <p>Explore my projects, skills, and experience.</p>
+            </div>
+        </section>
+        
         <section id="about">
             <div class="container">
                 <h2>About Me</h2>
-                <img src="https://img.freepik.com/free-vector/it-job-concept-illustration_114360-27000.jpg?t=st=1722687866~exp=1722691466~hmac=1c4822faeefa00b0bdbae7141d67fb06a60d27e22221337f4da8863ea30204dd&w=740" alt="About Me">
+                <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script><lottie-player src="https://lottie.host/fa230d4a-9dda-4725-953d-ec053163afd2/yVtNsJYJwD.json" background="##22292F" speed="1" style="width: 1200px; height: 500px; content:;"; loop autoplay mode="normal"></lottie-player>
                 <p>Hello! I’m Ali Maqsood, a DevOps engineer with extensive knowledge in Python, Linux, and expertise in networking. I specialize in all DevOps and AWS tools, ensuring efficient and reliable deployment processes.</p>
             </div>
         </section>
+
         <section id="projects">
             <div class="container">
                 <h2>Projects</h2>
-                <div class="project">
-                    <img src="https://img.freepik.com/free-vector/programmer-working-web-development-code-engineer-programming-python-php-java-script-computer_90220-250.jpg?t=st=1722687235~exp=1722690835~hmac=b4448ae15d4b3f9d02ae4ca18bc6d75ae4fec87dbdfebb17920d63cb204f147e&w=740" alt="Project 1">
-                    <h3>Project 1: Desktop Assistant</h3>
-                    <p>Developed a desktop assistant using Python and voice recognition libraries. The assistant can perform tasks such as opening applications, searching the web, and providing weather updates.</p>
+                <div class="project-row">
+                    <div class="project">
+                        <div class="card">
+                            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script><lottie-player src="https://lottie.host/f096c38c-d84d-406d-bbeb-800785003b96/28BlhyZZNH.json" background="##FFFFFF" speed="1" style="width: 300px; height: 300px" loop autoplay mode="normal"></lottie-player>
+                            <h3>Project 1: Desktop Assistant</h3>
+                            <p>Developed a desktop assistant using Python and voice recognition libraries. The assistant can perform tasks such as opening applications, searching the web, and providing weather updates.</p>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="card">
+                            <dotlottie-player src="https://lottie.host/0ce3d87a-27ef-4b41-947f-1d11793a4dfb/KpzJBOLcKh.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
+                            <h3>Project 2: Inventory Management System</h3>
+                            <p>Created an inventory management system to track stock levels, orders, and deliveries. Implemented using Python and SQLite, it features a user-friendly interface for easy management.</p>
+                        </div>
+                    </div>
                 </div>
+                
                 <div class="project">
-                    <img src="https://img.freepik.com/premium-photo/man-sits-desk-with-computer-monitor-with-words-word-it_655090-3226487.jpg?w=740" alt="Project 2">
-                    <h3>Project 2: Inventory Management System</h3>
-                    <p>Created an inventory management system to track stock levels, orders, and deliveries. Implemented using Python and SQLite, it features a user-friendly interface for easy management.</p>
-                </div>
-                <div class="project">
-                    <img src="https://img.freepik.com/premium-photo/cloud-computing-specialist-tech-entrepreneur-design_1179667-2152.jpg?w=740" alt="Project 3">
-                    <h3>Project 3: Video Downloader Script</h3>
-                    <p>Designed a Python script to download videos from YouTube, handling various errors and age restrictions efficiently using the youtube-dl library.</p>
+                    <div class="card">
+                        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script><lottie-player src="https://lottie.host/a8fdbeff-0ef7-4a2e-a127-a1911316074a/d2x3mxrpSo.json" background="##fff" speed="1" style="width: 300px; height: 300px" loop autoplay mode="normal"></lottie-player>
+                        <h3>Project 3: Video Downloader Script</h3>
+                        <p>Designed a Python script to download videos from YouTube, handling various errors and age restrictions efficiently using the youtube-dl library.</p>
+                    </div>
                 </div>
             </div>
         </section>
+
         <section id="skills">
-            <div class="container">
+            <div class="conta iner">
                 <h2>Skills</h2>
                 <ul>
                     <li>Python</li>
@@ -61,37 +87,105 @@
                     <li>SEO Tools</li>
                     <li>Graphic Design</li>
                 </ul>
+                <div class="skills-chart">
+                   <!-- You can use a library like Chart.js for a visual skills chart -->
+                    <canvas id="skillsChart"></canvas>
+                </div>
             </div>
         </section>
+
+        <section id="testimonials">
+            <div class="container">
+                <h2>What Others Say</h2>
+                <div class="testimonial">
+                    <blockquote>
+                        <p>"Ali's work on our project was outstanding. Highly recommended!"</p>
+                        <footer>Jaun Lee, Company</footer>
+                    </blockquote>
+                </div>
+                <div class="testimonial">
+                    <blockquote>
+                        <p>"A true professional with deep expertise in DevOps. Great to work with!"</p>
+                        <footer>- Will Smith, Another Company</footer>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+
+        <section id="blog">
+            <div class="container">
+                <h2>Blog</h2>
+                <article>
+                    <h3>Latest Insights on Python Development</h3>
+                    <p>Stay tuned for the latest trends and tips in Python development. From new libraries to advanced techniques, I share my knowledge and experiences in this space.</p>
+                    <a href="blog.html">Read More</a>
+                </article>
+                <article>
+                    <h3>Understanding DevOps Practices</h3>
+                    <p>Learn about the best practices in DevOps, including automation, continuous integration, and deployment strategies. This blog will help you optimize your workflows.</p>
+                    <a href="blog.html">Read More</a>
+                </article>
+            </div>
+        </section>
+
         <section id="contact">
             <div class="container">
                 <h2>Contact</h2>
                 <p>If you’d like to get in touch, feel free to contact me via email or check out my GitHub profile.</p>
                 <p>Email: <a href="mailto:alimaqsood8745@gmail.com">alimaqsood8745@gmail.com</a></p>
                 <p>GitHub: <a href="https://github.com/alimaqsood119" target="_blank">alimaqsood119</a></p>
-                <body>
-                    <h1>Contact Form</h1>
-                    <form action="/submit_form" method="POST">
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="name" required><br><br>
-                        
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required><br><br>
-                        
-                        <label for="message">Message:</label>
-                        <textarea id="message" name="message" required></textarea><br><br>
-                        
-                        <button type="submit">Send</button>
-                    </form>
-                </body>
+                <h1>Contact Form</h1>
+                <form action="/submit_form" method="POST">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required><br><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br><br>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea><br><br>
+                    <button type="submit">Send</button>
+                </form>
+                <div class="download-section">
+                    <h2>Download My Resume</h2>
+                    <a href="M Ali Maqsood resume.pdf" download="M_Ali_Maqsood_Resume.pdf" class="download-button">
+                        <img src="1.png" alt="Download Resume" class="download-icon">
+                    </a>
+                </div>
             </div>
         </section>
-      
     </main>
     <footer>
         <div class="container">
             <p>&copy; 2024 Ali Maqsood. All rights reserved.</p>
         </div>
     </footer>
+
+    <script>
+        // GSAP animations
+       
+        // Skills Chart
+        const ctx = document.getElementById('skillsChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'radar',
+            data: {
+                labels: ['Python', 'Linux', 'Networking', 'DevOps Tools', 'AWS', 'Web Scraping', 'SEO Tools', 'Graphic Design'],
+                datasets: [{
+                    label: 'Skills Proficiency',
+                    data: [90, 85, 80, 95, 90, 75, 70, 60], // Example data
+                    backgroundColor: 'rgba(0, 119, 204, 0.2)',
+                    borderColor: 'rgba(0, 119, 204, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    r: {
+                        angleLines: {display: false},
+                        suggestedMin: 0,
+                        suggestedMax: 100
+                    }
+                }
+            }
+        });
+    </script>
 </body>
 </html>
